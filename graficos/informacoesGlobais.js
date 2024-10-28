@@ -9,7 +9,7 @@ async function vizualizarInformacoesGlobais() {
     const pessoasEmpregadas = (dados.total_pessoas_empregadas/1e9) 
     const horas = parseInt(dados.tempo_medio_trabalho_por_semana)
     const minutos = Math.round ((dados.tempo_medio_trabalho_por_semana - horas)* 60)
-    const percentual = ((pessoasEmpregadas/pessasNoMundo)*100).toFixed(2)
+    const percentual = ((pessoasEmpregadas/pessoasNoMundo)*100).toFixed(2)
     
     const paragrafo = document.createElement('p')
     paragrafo.classList.add('graficos-container__texto')
